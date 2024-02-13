@@ -5,5 +5,17 @@
 body {
 }
 
+html {
+	@apply text-slate-200;
+}
+
+.nav_link {
+	@apply text-slate-200 uppercase  hover:bg-gray-700 hover:bg-opacity-40 hover:text-white block rounded-md px-3 py-2 text-base font-medium transition-all;
+}
+
+.social_icon {
+	@apply text-slate-400 text-2xl rotate-90 hover:text-amber-600 hover:scale-105 transition-all;
+}
+
 @layer utilities {
 }

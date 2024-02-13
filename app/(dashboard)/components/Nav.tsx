@@ -1,13 +1,15 @@
 "use client";
 import { useState } from "react";
-
+import { AiOutlineMail } from "react-icons/ai";
+import { BsTelephone } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
 export default function Nav() {
 	// State to manage the visibility of the mobile menu
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<nav className="fixed z-50 ">
-			<div className=" max-w-7xl px-2 sm:px-6  lg:px-8">
+		<nav className="fixed z-50 w-screen bg-black  bg-opacity-25 ">
+			<div className="  px-2 sm:px-6 w-full  lg:px-8">
 				<div className="relative flex h-16 items-center justify-between">
 					<div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
 						{/* Mobile menu button */}
@@ -50,36 +52,54 @@ export default function Nav() {
 							</svg>
 						</button>
 					</div>
-					<div className="flex flex-1  sm:items-stretch sm:justify-start">
-						<div className="flex flex-shrink-0 items-center">
-							<div className="">ADEE</div>
+					<div className="flex flex-1  sm:items-stretch sm:justify-between w-full ">
+						<div className="flex  absolute flex-col flex-shrink-0 items-center justify-center  bg-slate-900 bg-opacity-45 pl-6 sm:pl-2 -left-8 top-0 min-w-[200px] w-2/12 h-[300px]">
+							<h1 className="text-slate-100 opacity-80 text-6xl font-bold z-20">
+								ADEE
+							</h1>
+							<h2 className="z-20 border-t border-b border-amber-600 p-2">
+								Pracownia Architektoniczna
+							</h2>
+						</div>
+						<div className="absolute text-9xl top-48 left-40 opacity-25 font-bold">
+							ADEE
+						</div>
+						<div className="flex  absolute flex-col mt-36   items-center justify-center bg-slate-900 bg-opacity-35  -left-8 min-w-[100px] top-0 w-1/12 h-screen">
+							<div className="flex  w-screen gap-5   justify-center   items-center -rotate-90">
+								<a className="social_icon sm:hidden" href="tel:+48792793736">
+									<BsTelephone />
+								</a>
+								<a className=" hidden sm:block text-sm text-slate-400 " href="">
+									+ 48 792 793 736
+								</a>
+								<a className="social_icon" href="mailto:mailbox.adee@gmail.com">
+									<AiOutlineMail />
+								</a>
+								<a className="social_icon" href="mailto:mailbox.adee@gmail.com">
+									<FaLinkedin />
+								</a>
+
+								<div className="border-[1px] border-slate-400 opacity-35 w-1/12 "></div>
+								<h2 className=" text-amber-600 italic  ">Grzegorz Chodara</h2>
+							</div>
 						</div>
 						<div className="flex flex-shrink-0 items-center">
-							<div className="">telNR</div>
+							<div className=""></div>
 						</div>
-						<div className="hidden sm:ml-6 sm:block">
+						<div className="hidden sm:ml-6 sm:block ">
 							<div className="flex space-x-4">
-								<div className="space-y-1 px-2 pt-2 pb-3 flex">
+								<div className=" px-2 pt-2 pb-3 flex">
 									{/* Mobile navigation links */}
-									<a
-										href="#"
-										className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
-										aria-current="page">
+									<a href="#" className="nav_link">
 										Strona głowna
 									</a>
-									<a
-										href="#"
-										className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+									<a href="#" className="nav_link">
 										O mnie
 									</a>
-									<a
-										href="#"
-										className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+									<a href="#" className="nav_link">
 										Projekty
 									</a>
-									<a
-										href="#"
-										className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+									<a href="#" className="nav_link">
 										Kontakt
 									</a>
 								</div>
@@ -91,28 +111,19 @@ export default function Nav() {
 			{/* Mobile menu, show/hide based on menu state */}
 			<div
 				className={`${isOpen ? "block" : "hidden"} sm:hidden `}
-				id="mobile-menu">
-				<div className="space-y-1 px-2 pt-2 pb-3">
+				id="mobile-menu ">
+				<div className="flex flex-col justify-end items-end px-2 pt-2 pb-3 z-50 ">
 					{/* Mobile navigation links */}
-					<a
-						href="#"
-						className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
-						aria-current="page">
+					<a className="nav_link" href="#">
 						Dashboard
 					</a>
-					<a
-						href="#"
-						className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+					<a className="nav_link" href="#">
 						Team
 					</a>
-					<a
-						href="#"
-						className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+					<a className="nav_link" href="#">
 						Projects
 					</a>
-					<a
-						href="#"
-						className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+					<a className="nav_link" href="#">
 						Calendar
 					</a>
 				</div>
