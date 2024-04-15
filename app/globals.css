@@ -16,6 +16,8 @@ html {
 .social_icon {
 	@apply text-slate-400 text-2xl rotate-90 hover:text-amber-600 hover:scale-105 transition-all;
 }
-
+button {
+	@apply px-2 py-1 bg-amber-400 bg-opacity-80 text-black rounded-full text-sm hover:scale-95 transition-all hover:bg-black hover:bg-opacity-70 hover:text-white;
+}
 @layer utilities {
 }
