@@ -1,10 +1,11 @@
+import About from "./(dashboard)/components/About";
 import Header from "./(dashboard)/components/Header";
 
 export default function Home() {
 	return (
-		<main className="">
+		<main className="max-w-screen">
 			<Header />
-			<div className=""></div>
+			<About />
 		</main>
 	);
 }

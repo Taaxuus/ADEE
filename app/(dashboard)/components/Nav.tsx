@@ -8,8 +8,8 @@ export default function Nav() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<nav className="fixed z-50 w-screen bg-black  bg-opacity-25 ">
-			<div className="  px-2 sm:px-6 w-full  lg:px-8">
+		<nav className="absolute z-50 w-full bg-black  bg-opacity-25 ">
+			<div className="  px-2 sm:px-6  lg:px-8">
 				<div className="relative flex h-16 items-center justify-between">
 					<div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
 						{/* Mobile menu button */}
@@ -64,7 +64,7 @@ export default function Nav() {
 						<div className="absolute text-9xl top-48 left-40 opacity-25 font-bold">
 							ADEE
 						</div>
-						<div className="flex  absolute flex-col mt-36   items-center justify-center bg-slate-900 bg-opacity-35  -left-8 min-w-[100px] top-0 w-1/12 h-screen">
+						<div className="flex  absolute flex-col pt-36   items-center justify-center bg-slate-900 bg-opacity-35  -left-8 min-w-[100px] top-0 max-w-[100px] h-screen">
 							<div className="flex  w-screen gap-5   justify-center   items-center -rotate-90">
 								<a className="social_icon sm:hidden" href="tel:+48792793736">
 									<BsTelephone />

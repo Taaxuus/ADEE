@@ -6,7 +6,7 @@ body {
 }
 
 html {
-	@apply text-slate-200;
+	@apply text-slate-200 scroll-smooth;
 }
 
 .nav_link {
@@ -18,6 +18,13 @@ html {
 }
 button {
 	@apply px-2 py-1 bg-amber-400 bg-opacity-80 text-black rounded-full text-sm hover:scale-95 transition-all hover:bg-black hover:bg-opacity-70 hover:text-white;
+}
+.aid {
+	@apply px-2 py-1 bg-amber-400 bg-opacity-80 text-black rounded-full text-sm hover:scale-95 transition-all hover:bg-black hover:bg-opacity-70 hover:text-white;
+}
+
+section {
+	@apply px-2 sm:px-6  lg:px-8;
 }
 @layer utilities {
 }
