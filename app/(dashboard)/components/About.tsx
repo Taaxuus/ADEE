@@ -6,15 +6,15 @@ export default function About() {
 	return (
 		<section
 			id="about"
-			className="h-screen w-full flex flex-col  bg-gradient-to-r from-slate-900 to-slate-700 relative p-0">
+			className="lg:h-screen w-full sm:flex flex-col  bg-gradient-to-r from-slate-900 to-slate-700 relative p-0">
 			<h3 className="text-slate-100 absolute opacity-20 text-9xl left-20 top-20 font-bold z-20">
 				O biurze
 			</h3>
 			<h4 className="self-center  p-3 font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-slate-100 to-amber-800">
 				ADEE
 			</h4>
-			<div className="w-full h-full flex ">
-				<div className="h-full w-1/3   justify-center border-r-[1px] flex gap-2 flex-col p-4">
+			<div className="w-full h-full lg:flex flex-wrap">
+				<div className="h-full lg:w-1/3 w-full  justify-center border-r-[1px] flex gap-2 flex-col p-4">
 					<h4>Tytuł</h4>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
@@ -35,10 +35,7 @@ export default function About() {
 						similique. Quia, obcaecati aut earum in quae porro a.
 					</p>
 				</div>
-				<div className="h-full w-1/3   justify-center border-r-[1px] flex gap-2 flex-col p-4">
-					{/* <h4>
-						Specjalizacje <span className="text-amber-500">:</span>
-					</h4> */}
+				<div className="h-full lg:w-1/3 w-full   justify-center border-r-[1px] flex gap-2 flex-col p-4">
 					<div className="flex flex-col gap-4 justify-center items-center">
 						<span className=" text-amber-700 text-8xl">
 							<MdArchitecture />
@@ -73,7 +70,7 @@ export default function About() {
 						</p>
 					</div>
 				</div>
-				<div className="h-full w-1/3 border-r-[1px]  p-2">
+				<div className="h-full lg:w-1/3 w-full border-r-[1px]  p-2">
 					<p>Tutaj bedzie jakies fajne zdjecie </p>
 				</div>
 			</div>
