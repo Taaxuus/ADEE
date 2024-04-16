@@ -34,10 +34,7 @@ export default function CarouselItem({ project }: Props) {
 				</div>
 
 				{infoShow && (
-					<div
-						className={`absolute h-full w-full left-0 top-0 ${
-							infoShow ? "bg-black bg-opacity-80" : ""
-						}  transition-opacity duration-1000 ease-in-out`}>
+					<div className="absolute h-full w-full left-0 top-0 bg-black bg-opacity-80 transition-opacity duration-1000 ease-in-out">
 						<div className="text-white text-xl p-10 transition-opacity duration-1000 ease-in-out">
 							{project.description}
 						</div>
