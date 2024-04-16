@@ -10,7 +10,7 @@ export default function About() {
 			<h3 className="text-slate-100 absolute opacity-20 text-9xl left-20 top-20 font-bold z-20">
 				O biurze
 			</h3>
-			<h4 className="self-center  p-3 font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-slate-100 to-amber-800">
+			<h4 className="self-center italic  p-3 font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-amber-200 to-amber-500">
 				ADEE
 			</h4>
 			<div className="w-full h-full lg:flex flex-wrap">
@@ -37,7 +37,7 @@ export default function About() {
 				</div>
 				<div className="h-full lg:w-1/3 w-full   justify-center border-r-[1px] flex gap-2 flex-col p-4">
 					<div className="flex flex-col gap-4 justify-center items-center">
-						<span className=" text-amber-700 text-8xl">
+						<span className=" text-amber-500 text-8xl">
 							<MdArchitecture />
 						</span>
 						<p className="uppercase">Planowanie</p>
@@ -48,7 +48,7 @@ export default function About() {
 						</p>
 					</div>
 					<div className="flex flex-col gap-4 justify-center items-center">
-						<span className=" text-amber-700 text-8xl">
+						<span className=" text-amber-500 text-8xl">
 							<GiFamilyHouse />
 						</span>
 						<p className="uppercase">Wnętrza</p>
@@ -59,7 +59,7 @@ export default function About() {
 						</p>
 					</div>
 					<div className="flex flex-col gap-4 justify-center items-center">
-						<span className=" text-amber-700 text-8xl">
+						<span className=" text-amber-500 text-8xl">
 							<FaBuildingColumns />
 						</span>
 						<p className="uppercase">Archotektura</p>

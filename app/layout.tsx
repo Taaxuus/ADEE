@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import Nav from "./(dashboard)/components/Nav";
-
+import "leaflet/dist/leaflet.css";
 const roboto = Roboto({
 	weight: ["400", "700"],
 	style: ["normal", "italic"],

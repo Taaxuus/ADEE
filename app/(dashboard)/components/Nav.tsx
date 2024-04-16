@@ -93,13 +93,13 @@ export default function Nav() {
 									<a href="#" className="nav_link">
 										Strona głowna
 									</a>
-									<a href="#" className="nav_link">
+									<a href="#about" className="nav_link">
 										O mnie
 									</a>
 									<a href="#projects" className="nav_link">
 										Projekty
 									</a>
-									<a href="#" className="nav_link">
+									<a href="#contact" className="nav_link">
 										Kontakt
 									</a>
 								</div>
@@ -114,17 +114,17 @@ export default function Nav() {
 				id="mobile-menu ">
 				<div className="flex flex-col justify-end items-end px-2 pt-2 pb-3 z-50 ">
 					{/* Mobile navigation links */}
-					<a className="nav_link" href="#">
-						Dashboard
+					<a href="#" className="nav_link">
+						Strona głowna
 					</a>
-					<a className="nav_link" href="#">
-						Team
+					<a href="#about" className="nav_link">
+						O mnie
 					</a>
-					<a className="nav_link" href="#">
-						Projects
+					<a href="#projects" className="nav_link">
+						Projekty
 					</a>
-					<a className="nav_link" href="#">
-						Calendar
+					<a href="#contact" className="nav_link">
+						Kontakt
 					</a>
 				</div>
 			</div>
