@@ -96,7 +96,7 @@ export default function Nav() {
 									<a href="#" className="nav_link">
 										O mnie
 									</a>
-									<a href="#" className="nav_link">
+									<a href="#projects" className="nav_link">
 										Projekty
 									</a>
 									<a href="#" className="nav_link">
